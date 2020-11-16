@@ -6,6 +6,9 @@ const Azure = require('azure-storage')
 const requiredParameter = require('./RequiredParameter')
 const Stream = require('stream')
 
+
+// console.log('requiredParameter', requiredParameter.default("test"));
+
 export class AzureStorageAdapter {
   // Creates an Azure Storage Client.
   constructor(

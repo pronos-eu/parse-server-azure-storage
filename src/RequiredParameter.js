@@ -1,1 +1,3 @@
-export default (errorMessage) => {throw errorMessage}
+module.exports = function requireParameter(errorMessage) {
+  throw errorMessage
+}
