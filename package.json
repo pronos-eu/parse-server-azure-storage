@@ -1,5 +1,5 @@
 {
-  "name": "parse-server-azure-storage-reloaded",
+  "name": "@pronos-eu/parse-server-azure-storage-reloaded",
   "version": "1.6.3",
   "description": "Use Azure Blob Storage with Parse Server",
   "main": "lib/AzureStorageAdapter.js",
@@ -38,6 +38,6 @@
     "test": "./node_modules/.bin/babel-node ./node_modules/babel-istanbul/lib/cli.js cover -x **/spec/** ./node_modules/jasmine/bin/jasmine.js"
   },
   "engines": {
-    "node": ">=4.3"
+    "node": ">=12.3"
   }
 }

@@ -44,7 +44,7 @@ export class AzureStorageAdapter {
           return reject(cerr)
         }
 
-        this._client.createBlockBlobFromText(this._container, filename, data, (err, result) => {
+        this._client.createBlockBlobFromStream(this._container, filename, Stream.Readable.from(data), data.length, (err, result) => {
           if (err) {
             return reject(err)
           }
